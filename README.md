@@ -50,3 +50,7 @@ The installer link is pinned to a verified release so that its visible SHA-256 c
 ## Browser policy fallback
 
 The current Sites host did not enforce `_headers` when checked after version 34. Every generated HTML document now includes a meta CSP for `object-src`, `base-uri` and `form-action`, plus an explicit referrer policy. This is a limited browser-level fallback, not full header enforcement or an XSS protection claim. It does not implement HSTS, MIME sniffing protection, Permissions-Policy or frame-ancestor restrictions. Those remain hosting tasks; do not mark the header review complete.
+
+## Responsive assets
+
+Carousel photos have 480/800/1536-pixel candidates selected by srcset/sizes. Original photos and the full-resolution text-heavy system map remain available. Tajawal WOFF2 files preserve the full original character and shaping tables; original TTF files and OFL are retained for source maintenance. Update the regular-font preload together with the CSS URL when changing fonts.
