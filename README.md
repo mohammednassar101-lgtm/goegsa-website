@@ -46,3 +46,7 @@ There are now eight pages per language, including privacy and website-use inform
 The installer link is pinned to a verified release so that its visible SHA-256 checksum matches the offered file. See `docs/release-verification-2026-10-27.md` before changing the download. `scripts/verify-release.mjs` checks this contract.
 
 `dist/_headers` provides portable static-host response-header rules. Deployment enforcement must be checked on the actual host. Frame-ancestor restrictions have not been enabled because the site also needs its approved embedded preview.
+
+## Browser policy fallback
+
+The current Sites host did not enforce `_headers` when checked after version 34. Every generated HTML document now includes a meta CSP for `object-src`, `base-uri` and `form-action`, plus an explicit referrer policy. This is a limited browser-level fallback, not full header enforcement or an XSS protection claim. It does not implement HSTS, MIME sniffing protection, Permissions-Policy or frame-ancestor restrictions. Those remain hosting tasks; do not mark the header review complete.
