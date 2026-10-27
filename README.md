@@ -54,3 +54,7 @@ The current Sites host did not enforce `_headers` when checked after version 34.
 ## Responsive assets
 
 Carousel photos have 480/800/1536-pixel candidates selected by srcset/sizes. Original photos and the full-resolution text-heavy system map remain available. Tajawal WOFF2 files preserve the full original character and shaping tables; original TTF files and OFL are retained for source maintenance. Update the regular-font preload together with the CSS URL when changing fonts.
+
+## Launch staging
+
+Run `node scripts/prepare-launch.mjs` and `node scripts/verify-launch.mjs` to regenerate/check `docs/launch-ready`. This folder is outside deployed dist. Its sitemap, robots allow rule, canonical/hreflang metadata and social cards are staged for the owner-approved final domain. Follow its README at launch; do not treat staging as approval to enable indexing.

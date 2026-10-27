@@ -1,0 +1,276 @@
+{
+  "status": "staged-only",
+  "targetOrigin": "https://goegsa.com",
+  "pages": [
+    {
+      "lang": "ar",
+      "route": "",
+      "url": "https://goegsa.com/",
+      "title": "GOEGSA | تطوير البرمجيات والحلول الرقمية",
+      "description": "تطوير المواقع والتطبيقات والمتاجر وأنظمة الإدارة. اكتشف منتجات GOEGSA وتواصل مع الفريق.",
+      "canonical": "https://goegsa.com/",
+      "alternatives": {
+        "ar": "https://goegsa.com/",
+        "en": "https://goegsa.com/en/",
+        "x-default": "https://goegsa.com/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "products/",
+      "url": "https://goegsa.com/products/",
+      "title": "منتجات GOEGSA",
+      "description": "استكشف نظام إدارة المدارس من GOEGSA ووظائفه وطريقة تشغيله واطلب عرضًا تجريبيًا.",
+      "canonical": "https://goegsa.com/products/",
+      "alternatives": {
+        "ar": "https://goegsa.com/products/",
+        "en": "https://goegsa.com/en/products/",
+        "x-default": "https://goegsa.com/products/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "products/school-management/",
+      "url": "https://goegsa.com/products/school-management/",
+      "title": "نظام إدارة المدارس | GOEGSA",
+      "description": "إدارة الطلاب والرسوم والحضور والجداول والتقارير، في نظام محلي بواجهة عربية للمدارس الخاصة الصغيرة والمتوسطة.",
+      "canonical": "https://goegsa.com/products/school-management/",
+      "alternatives": {
+        "ar": "https://goegsa.com/products/school-management/",
+        "en": "https://goegsa.com/en/products/school-management/",
+        "x-default": "https://goegsa.com/products/school-management/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "services/",
+      "url": "https://goegsa.com/services/",
+      "title": "خدمات GOEGSA",
+      "description": "تطوير المواقع وتطبيقات الجوال والمتاجر الإلكترونية وأنظمة الإدارة، بنطاق عمل محدد لكل مشروع.",
+      "canonical": "https://goegsa.com/services/",
+      "alternatives": {
+        "ar": "https://goegsa.com/services/",
+        "en": "https://goegsa.com/en/services/",
+        "x-default": "https://goegsa.com/services/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "about/",
+      "url": "https://goegsa.com/about/",
+      "title": "عن GOEGSA",
+      "description": "تعرّف على GOEGSA وخدماتها ومنتجها الأول لإدارة المدارس وطريقة العمل على المشروعات.",
+      "canonical": "https://goegsa.com/about/",
+      "alternatives": {
+        "ar": "https://goegsa.com/about/",
+        "en": "https://goegsa.com/en/about/",
+        "x-default": "https://goegsa.com/about/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "contact/",
+      "url": "https://goegsa.com/contact/",
+      "title": "تواصل مع GOEGSA",
+      "description": "تواصل مع GOEGSA للاستفسارات والمبيعات والدعم الفني والتوظيف، أو اطلب عرضًا تجريبيًا لنظام المدارس.",
+      "canonical": "https://goegsa.com/contact/",
+      "alternatives": {
+        "ar": "https://goegsa.com/contact/",
+        "en": "https://goegsa.com/en/contact/",
+        "x-default": "https://goegsa.com/contact/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "privacy/",
+      "url": "https://goegsa.com/privacy/",
+      "title": "سياسة الخصوصية | GOEGSA",
+      "description": "كيفية التعامل مع بيانات التواصل وطلبات التجربة.",
+      "canonical": "https://goegsa.com/privacy/",
+      "alternatives": {
+        "ar": "https://goegsa.com/privacy/",
+        "en": "https://goegsa.com/en/privacy/",
+        "x-default": "https://goegsa.com/privacy/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "ar",
+      "route": "terms/",
+      "url": "https://goegsa.com/terms/",
+      "title": "استخدام الموقع | GOEGSA",
+      "description": "معلومات استخدام الموقع وطلبات العروض وتجربة البرنامج.",
+      "canonical": "https://goegsa.com/terms/",
+      "alternatives": {
+        "ar": "https://goegsa.com/terms/",
+        "en": "https://goegsa.com/en/terms/",
+        "x-default": "https://goegsa.com/terms/"
+      },
+      "image": "https://goegsa.com/assets/social-ar.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "",
+      "url": "https://goegsa.com/en/",
+      "title": "GOEGSA | Software & Digital Solutions",
+      "description": "Websites, applications, online stores and management systems. Explore GOEGSA products and contact the team.",
+      "canonical": "https://goegsa.com/en/",
+      "alternatives": {
+        "ar": "https://goegsa.com/",
+        "en": "https://goegsa.com/en/",
+        "x-default": "https://goegsa.com/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "products/",
+      "url": "https://goegsa.com/en/products/",
+      "title": "GOEGSA products",
+      "description": "Explore GOEGSA School Management System, its features and deployment model, and request a demo.",
+      "canonical": "https://goegsa.com/en/products/",
+      "alternatives": {
+        "ar": "https://goegsa.com/products/",
+        "en": "https://goegsa.com/en/products/",
+        "x-default": "https://goegsa.com/products/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "products/school-management/",
+      "url": "https://goegsa.com/en/products/school-management/",
+      "title": "School Management System | GOEGSA",
+      "description": "Students, fees, attendance, timetables and reports in a locally installed system with an Arabic interface for private schools.",
+      "canonical": "https://goegsa.com/en/products/school-management/",
+      "alternatives": {
+        "ar": "https://goegsa.com/products/school-management/",
+        "en": "https://goegsa.com/en/products/school-management/",
+        "x-default": "https://goegsa.com/products/school-management/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "services/",
+      "url": "https://goegsa.com/en/services/",
+      "title": "GOEGSA services",
+      "description": "Website, mobile application, online store and management system development, with a defined scope for each project.",
+      "canonical": "https://goegsa.com/en/services/",
+      "alternatives": {
+        "ar": "https://goegsa.com/services/",
+        "en": "https://goegsa.com/en/services/",
+        "x-default": "https://goegsa.com/services/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "about/",
+      "url": "https://goegsa.com/en/about/",
+      "title": "About GOEGSA",
+      "description": "Learn about GOEGSA, its services, first school management product and project approach.",
+      "canonical": "https://goegsa.com/en/about/",
+      "alternatives": {
+        "ar": "https://goegsa.com/about/",
+        "en": "https://goegsa.com/en/about/",
+        "x-default": "https://goegsa.com/about/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "contact/",
+      "url": "https://goegsa.com/en/contact/",
+      "title": "Contact GOEGSA",
+      "description": "Contact GOEGSA for inquiries, sales, technical support and careers, or request a school system demo.",
+      "canonical": "https://goegsa.com/en/contact/",
+      "alternatives": {
+        "ar": "https://goegsa.com/contact/",
+        "en": "https://goegsa.com/en/contact/",
+        "x-default": "https://goegsa.com/contact/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "privacy/",
+      "url": "https://goegsa.com/en/privacy/",
+      "title": "Privacy policy | GOEGSA",
+      "description": "How contact details and trial requests are handled.",
+      "canonical": "https://goegsa.com/en/privacy/",
+      "alternatives": {
+        "ar": "https://goegsa.com/privacy/",
+        "en": "https://goegsa.com/en/privacy/",
+        "x-default": "https://goegsa.com/privacy/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    },
+    {
+      "lang": "en",
+      "route": "terms/",
+      "url": "https://goegsa.com/en/terms/",
+      "title": "Website use | GOEGSA",
+      "description": "Website use, quotations and software trial information.",
+      "canonical": "https://goegsa.com/en/terms/",
+      "alternatives": {
+        "ar": "https://goegsa.com/terms/",
+        "en": "https://goegsa.com/en/terms/",
+        "x-default": "https://goegsa.com/terms/"
+      },
+      "image": "https://goegsa.com/assets/social-en.png",
+      "imageWidth": 1200,
+      "imageHeight": 630
+    }
+  ],
+  "organization": {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GOEGSA",
+    "legalName": "جو إيجسا لتطوير البرمجيات والحلول الرقمية",
+    "url": "https://goegsa.com/",
+    "logo": "https://goegsa.com/assets/logo.svg",
+    "email": "goegsa.business@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الرياض",
+      "addressCountry": "SA"
+    }
+  }
+}
