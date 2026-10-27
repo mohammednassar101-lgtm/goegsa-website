@@ -1,0 +1,142 @@
+{
+  "privacy": {
+    "ar": {
+      "title": "سياسة الخصوصية",
+      "intro": "كيف نتعامل مع بيانات تواصلك وطلب التجربة.",
+      "sections": [
+        [
+          "المشغّل والتواصل",
+          "تشغّل هذا الموقع جو إيجسا لتطوير البرمجيات والحلول الرقمية (GOEGSA)، الرياض، المملكة العربية السعودية. لطلبات الخصوصية أو وقف التسويق: goegsa.business@gmail.com. آخر تحديث: 27 أكتوبر 2026."
+        ],
+        [
+          "ما البيانات التي تطلبها النماذج؟",
+          "يطلب نموذج تجربة البرنامج الاسم واسم المدرسة أو الجهة والبريد الإلكتروني ورقم الجوال. وقد تتضمن نماذج الاستفسارات تفاصيل المشروع أو عدد الطلاب أو وصف المشكلة التي تختار إدخالها. لا ترسل كلمات مرور أو بيانات طلاب حقيقية أو بيانات حساسة في هذه الرسائل."
+        ],
+        [
+          "كيف تصل رسالتك؟",
+          "تُجهّز النماذج رسالة في تطبيق البريد أو واتساب بحسب اختيارك؛ راجعها وأرسلها. لا يتضمن كود الموقع الحالي قاعدة بيانات لحفظ طلبات العملاء أو خدمة إرسال تلقائي خلفية. عند إرسال الرسالة، تُحفظ في قنوات البريد أو واتساب التي تستخدمها GOEGSA وفق إعدادات تلك الخدمات."
+        ],
+        [
+          "الغرض والموافقة التسويقية",
+          "نستخدم المعلومات التي ترسلها للرد على طلب التجربة أو الاستفسار أو العرض أو الدعم. يعتمد التواصل التسويقي على اختيارك المنفصل في النموذج؛ عدم اختيار التسويق لا يمنع تجربة البرنامج. يمكنك سحب موافقتك أو طلب وقف الرسائل التسويقية في أي وقت عبر بريد الخصوصية."
+        ],
+        [
+          "الخدمات المرتبطة ومكان المعالجة",
+          "تُفتح رسائل البريد لدى مزود البريد الذي تختاره، ورسائل واتساب عبر Meta، ويستضيف GitHub ملف البرنامج. تُقدّم الاستضافة الحالية عبر نطاق chatgpt.site. قد تعالج هذه الجهات بيانات اتصال تقنية أو محتوى الرسائل بحسب الخدمة وإعداداتها، وقد تكون المعالجة خارج المملكة. لا يحدد الموقع بلد تخزين حسابات البريد أو واتساب؛ يمكن طلب التفاصيل المتاحة عبر بريد الخصوصية. تنطبق سياسات كل مزود على استخدام خدمته."
+        ],
+        [
+          "مدة الاحتفاظ والمراجعة",
+          "نحتفظ برسائل العملاء لمدة 12 شهرًا من آخر تواصل، ثم تُراجع يدويًا ويُحذف غير اللازم من حسابات التواصل، ما لم تستلزم المعاملة القائمة أو متطلبات نظامية الاحتفاظ ببيانات محددة مدة أطول. لا يتضمن الموقع حذفًا آليًا. يمكن طلب الحذف قبل ذلك عبر بريد الخصوصية، وتُراجع الطلبات وفق الحالة والمتطلبات المطبقة."
+        ],
+        [
+          "طلباتك وشكاواك",
+          "يمكنك طلب الاطلاع على بيانات أرسلتها أو نسخة منها أو تصحيحها أو حذف غير اللازم، وسحب الموافقة التسويقية. أرسل الطلب إلى goegsa.business@gmail.com مع معلومات كافية لتحديد رسالتك، دون إرسال وثائق هوية أو معلومات حساسة ابتداءً. قد نحتاج تحققًا مناسبًا قبل تسليم بيانات شخصية. تُعالج الطلبات يدويًا ضمن المدد النظامية المطبقة، ويمكن تقديم شكوى إلى الجهة المختصة بحماية البيانات الشخصية في المملكة."
+        ],
+        [
+          "الملفات التقنية والتحديثات",
+          "لا يتضمن كود الموقع الحالي أداة تتبع تسويقي أو تحليلات مخصصة أو حساب عميل. قد تستخدم منصة الاستضافة والخدمات الخارجية سجلات أو ملفات تقنية لتقديم خدماتها وحمايتها. نحدّث هذه الصفحة عند تغيير طريقة التعامل مع البيانات ونبين تاريخ التحديث."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Privacy policy",
+      "intro": "How we handle contact details and trial requests.",
+      "sections": [
+        [
+          "Operator and contact",
+          "This website is operated by جو إيجسا لتطوير البرمجيات والحلول الرقمية (GOEGSA), Riyadh, Saudi Arabia. Contact goegsa.business@gmail.com for privacy requests or to stop marketing. Last updated: 27 October 2026."
+        ],
+        [
+          "Details requested by forms",
+          "The trial form asks for your name, school or organization, email and phone. Inquiry forms may include project details, student count or an issue description you choose to provide. Do not send passwords, real student records or sensitive information."
+        ],
+        [
+          "How your message reaches us",
+          "Forms prepare a message in your email app or WhatsApp for you to review and send. The current website code has no customer-request database or automatic backend delivery service. Messages you send are retained in the email or WhatsApp channels used by GOEGSA, according to those services and their settings."
+        ],
+        [
+          "Purpose and marketing choice",
+          "We use details you send to respond to trial, inquiry, quotation or support requests. Marketing follows your separate optional choice in the form; declining marketing does not prevent the trial. You can withdraw marketing consent or request that marketing stop at any time through our privacy email."
+        ],
+        [
+          "Related services and processing location",
+          "Email opens with your chosen provider, WhatsApp uses Meta, and GitHub hosts the installer. The current site is hosted under chatgpt.site. These providers may process technical connection data or message contents according to the service and its settings, potentially outside Saudi Arabia. This site does not determine where email or WhatsApp accounts store data; contact our privacy email for available details. Each provider has its own policies."
+        ],
+        [
+          "Retention and review",
+          "Customer messages are retained for 12 months after the last contact, then reviewed manually and unnecessary messages deleted from communication accounts, unless an ongoing transaction or applicable requirements call for keeping specific information longer. The website does not delete messages automatically. You may request earlier deletion; requests are reviewed in light of the circumstances and applicable requirements."
+        ],
+        [
+          "Requests and complaints",
+          "You can request access, a copy, correction or deletion of information you sent, and withdraw marketing consent. Email goegsa.business@gmail.com with enough information to locate your message; do not initially send identity documents or sensitive information. Appropriate verification may be needed before disclosing personal information. Requests are handled manually within applicable statutory timeframes. You may complain to the competent personal-data protection authority in Saudi Arabia."
+        ],
+        [
+          "Technical information and updates",
+          "The current website code has no custom marketing tracker, analytics service or customer account. Hosting and external providers may use technical logs or files to provide and protect their services. We update this page when data handling changes and show the update date."
+        ]
+      ]
+    }
+  },
+  "terms": {
+    "ar": {
+      "title": "استخدام الموقع",
+      "intro": "معلومات عن الموقع وطلبات العروض وتجربة البرنامج.",
+      "sections": [
+        [
+          "عن الموقع",
+          "الموقع تعريفي بمنتجات وخدمات جو إيجسا لتطوير البرمجيات والحلول الرقمية (GOEGSA)، وموقعها الرياض، المملكة العربية السعودية. للتواصل: goegsa.business@gmail.com."
+        ],
+        [
+          "الاستفسارات والعروض",
+          "طلب عرض السعر أو إرسال استفسار لا يُكمل عملية شراء ولا يحدد وحده نطاق العمل أو التكلفة أو مواعيد التسليم. تُحدد التفاصيل في عرض أو اتفاق يعتمد بين الطرفين. لا توجد عملية دفع أو شراء آلية داخل هذا الموقع."
+        ],
+        [
+          "تجربة البرنامج وترخيصه",
+          "توضح صفحة المنتج شروط التشغيل والتجربة المتاحة: ويندوز 10 و11 وتجربة مجانية لمدة 14 يومًا. استخدام البرنامج نفسه يخضع لاتفاقية الاستخدام والترخيص المعروضة داخل البرنامج؛ هذه الصفحة لا تستبدل تلك الاتفاقية ولا تضيف حقوق ترخيص جديدة."
+        ],
+        [
+          "التنزيل والتحقق",
+          "يبيّن قسم التحقق رقم إصدار الملف وبصمة SHA-256 الخاصة به. قارن الملف بالإصدار نفسه ولا تستخدم بصمة إصدار لملف مختلف. تطابق البصمة يؤكد تطابق الملف ولا يغني عن فحصه أو سياسات أمان المدرسة."
+        ],
+        [
+          "الرسائل والخدمات الخارجية",
+          "راجع الرسالة المجهزة في البريد أو واتساب وأرسلها بنفسك. قد تفتح الروابط خدمات خارجية مثل GitHub أو واتساب أو تطبيق البريد، وتخضع تلك الخدمات لشروطها. يوضح إشعار الخصوصية طريقة التعامل مع بيانات التواصل."
+        ],
+        [
+          "دقة المحتوى والتحديث",
+          "نبين الميزات المتاحة والاختيارية والقيود في صفحات المنتج. قد تتغير الإصدارات والتكاملات، لذا تُراجع المتطلبات والنطاق والدعم في العرض المعتمد قبل الشراء. إذا وجدت معلومة غير دقيقة فتواصل معنا لتصحيحها."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Website use",
+      "intro": "Information about the website, quotations and software trials.",
+      "sections": [
+        [
+          "About this website",
+          "This website presents products and services from جو إيجسا لتطوير البرمجيات والحلول الرقمية (GOEGSA), based in Riyadh, Saudi Arabia. Contact: goegsa.business@gmail.com."
+        ],
+        [
+          "Inquiries and quotations",
+          "Requesting a quotation or sending an inquiry does not complete a purchase or by itself establish scope, pricing or delivery dates. Those details belong in an offer or agreement accepted by both parties. This website does not provide automated checkout or payment."
+        ],
+        [
+          "Trial and software licence",
+          "The product page describes the available trial and requirements: Windows 10 or 11 and a free 14-day trial. Software use is governed by the agreement and licence shown inside the program. This page does not replace that agreement or grant additional licence rights."
+        ],
+        [
+          "Downloads and verification",
+          "The verification section identifies the installer release and its SHA-256 checksum. Compare against the same release; a checksum for another release is not applicable. A matching checksum confirms the file matches, not that it is exempt from testing or school security policies."
+        ],
+        [
+          "Messages and external services",
+          "Review and send prepared email or WhatsApp messages yourself. Links may open services such as GitHub, WhatsApp or your email app, which have their own terms. Our privacy policy explains contact-data handling."
+        ],
+        [
+          "Content and updates",
+          "Product pages distinguish available and optional capabilities and their limitations. Releases and integrations may change, so confirm requirements, scope and support in the approved offer before purchasing. Contact us if you find inaccurate information."
+        ]
+      ]
+    }
+  }
+}

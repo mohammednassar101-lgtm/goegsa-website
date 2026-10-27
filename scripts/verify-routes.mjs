@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {render} from './build.mjs';
-const pages=[['','home'],['products/','catalog'],['products/school-management/','product'],['services/','services'],['about/','about'],['contact/','contact']];
+const pages=[['','home'],['products/','catalog'],['products/school-management/','product'],['services/','services'],['about/','about'],['contact/','contact'],['privacy/','privacy'],['terms/','terms']];
 for(const lang of ['ar','en'])for(const [route,page] of pages){
  const {html}=render(lang,route);
  assert(html.includes(`class="page-${page}"`),`${lang}/${route}: wrong page content`);
@@ -10,4 +10,4 @@ for(const lang of ['ar','en'])for(const [route,page] of pages){
  const destination=new URL(match[1],'https://goegsa.clearearth128.chatgpt.site');
  assert.equal(destination.hostname,'goegsa.clearearth128.chatgpt.site');
 }
-console.log('PASS: all 12 page types and language destinations stay on the correct site.');
+console.log('PASS: all 16 page types and language destinations stay on the correct site.');

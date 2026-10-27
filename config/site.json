@@ -2,7 +2,12 @@
   "company": {
     "name": "GOEGSA",
     "domain": "goegsa.com",
-    "defaultLanguage": "ar"
+    "defaultLanguage": "ar",
+    "legalName": "جو إيجسا لتطوير البرمجيات والحلول الرقمية",
+    "city": "الرياض",
+    "country": "المملكة العربية السعودية",
+    "privacyEmail": "goegsa.business@gmail.com",
+    "retentionMonths": 12
   },
   "contacts": {
     "info": "info@goegsa.com",
@@ -92,8 +97,12 @@
       "trial": {
         "days": 14,
         "requestRequired": false,
-        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/latest/download/SchoolSystemSetup.exe",
-        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/latest"
+        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/download/v1.3.19/SchoolSystemSetup.exe",
+        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/tag/v1.3.19",
+        "version": "v1.3.19",
+        "sha256": "64532ec79ff0b2f0642b25ddcbf9b93e6815e13eed01093f7daab3094729c173",
+        "verifiedAt": "2026-10-27",
+        "authenticodeStatus": "NotSigned"
       },
       "version": "1.3.18",
       "contentSource": "about_program_goegsa.md",

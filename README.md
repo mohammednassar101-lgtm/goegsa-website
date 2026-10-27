@@ -14,6 +14,7 @@ node scripts/verify.mjs
 node scripts/verify-carousel.mjs
 node scripts/verify-routes.mjs
 node scripts/verify-simple-trial.mjs
+node scripts/verify-release.mjs
 ```
 
 Edit shared page content in `dist/app.js`, trial messaging in `dist/simple-trial.js`, styles in `dist/styles.css`, `dist/design-system.css` and `dist/simple-trial.css`, and public business settings in `config/site.json`. Rebuild generated HTML after changes; do not edit only the generated HTML files. The current source layout is retained; separating source and output remains planned.
@@ -37,3 +38,11 @@ The download link becomes visible after the form action opens the draft link. Ma
 The former oversized identity and system-map PNG files have been replaced with local WebP files (155,128 and 169,750 bytes) with the same dimensions. The site no longer fetches the system map from a temporary external hostname. Images are included in this repository. No PNG originals or credentials are required for building.
 
 See [Claude's original review](docs/claude-review-2026-10-27.md), preserved unchanged, and [the assessment against the current site](docs/claude-review-response-2026-10-27.md). The original review covers commit `778b502`, before later published fixes and the new trial form.
+
+## Review remediation
+
+There are now eight pages per language, including privacy and website-use information. Edit policy text in `config/legal.json`; operator details and the manually managed 12-month correspondence retention policy were approved by the owner. No commercial-registration claim is published. The software licence remains separate from website-use information.
+
+The installer link is pinned to a verified release so that its visible SHA-256 checksum matches the offered file. See `docs/release-verification-2026-10-27.md` before changing the download. `scripts/verify-release.mjs` checks this contract.
+
+`dist/_headers` provides portable static-host response-header rules. Deployment enforcement must be checked on the actual host. Frame-ancestor restrictions have not been enabled because the site also needs its approved embedded preview.
