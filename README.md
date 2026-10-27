@@ -19,3 +19,6 @@ See QA.md for completed scope, checks and launch dependencies. The company domai
 
 ## Operational configuration
 Edit public business configuration in `config/site.json`, then run `node scripts/build.mjs`. Generated `dist/site-config.js` must load before `app.js`. Run `node scripts/verify.mjs` and `node scripts/verify-carousel.mjs` before packaging. Versioned asset references are generated automatically. See `docs/phase-2.md` for launch dependencies.
+
+## External review
+See `docs/claude-review-2026-10-27.md` for the Arabic site review (2026-10-27) and the prioritized action plan.
