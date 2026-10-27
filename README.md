@@ -1,24 +1,39 @@
 # GOEGSA website
 
-Private review site with Arabic and English content. Six pages per language.
+Arabic and English static marketing site. The deployed version includes the simplified trial request form: visitors enter their details, open an email or WhatsApp draft, then receive a download link. No customer database, automatic email delivery or tracking is included.
 
-## Build and checks
-Run `node scripts/build.mjs` to generate complete static HTML documents from the shared application content.
-Run `node scripts/verify.mjs` to build and verify all page variants, internal routes, assets and email request construction.
-Run `node --check dist/app.js` for syntax.
+## Build and validation
 
-Deploy `dist/` using the existing Site identity in `.openai/hosting.json`.
+Requires Node.js and Git. No package installation is needed.
 
-## Contact
-Forms open a mailto draft. Visitors review and send through their own email app. No backend email delivery, persistence or tracking is implemented. The draft recipient is selected from info, sales, support and hr at goegsa.com. Mailbox operation remains unverified.
+```sh
+node scripts/build.mjs
+node --check dist/app.js
+node --check dist/simple-trial.js
+node scripts/verify.mjs
+node scripts/verify-carousel.mjs
+node scripts/verify-routes.mjs
+node scripts/verify-simple-trial.mjs
+```
 
-## Brand
-The v5 vector logo is retained unchanged. Glossy light and dark references requested by the owner are displayed using CSS viewports over the supplied concept-reference image. The source pixels are unchanged.
+Edit shared page content in `dist/app.js`, trial messaging in `dist/simple-trial.js`, styles in `dist/styles.css`, `dist/design-system.css` and `dist/simple-trial.css`, and public business settings in `config/site.json`. Rebuild generated HTML after changes; do not edit only the generated HTML files. The current source layout is retained; separating source and output remains planned.
 
-See QA.md for completed scope, checks and launch dependencies. The company domain has not been connected.
+## Preview and deployment
 
-## Operational configuration
-Edit public business configuration in `config/site.json`, then run `node scripts/build.mjs`. Generated `dist/site-config.js` must load before `app.js`. Run `node scripts/verify.mjs` and `node scripts/verify-carousel.mjs` before packaging. Versioned asset references are generated automatically. See `docs/phase-2.md` for launch dependencies.
+Serve `dist/` at the web root using a local static HTTP server. Absolute asset paths require HTTP preview rather than opening HTML files directly.
 
-## External review
-See `docs/claude-review-2026-10-27.md` for the Arabic site review (2026-10-27) and the prioritized action plan.
+`.openai/hosting.json` contains the existing Sites identity and declares `dist` as the static directory. It contains no credentials. Existing Site access settings must be preserved. Deployment through Sites requires the owning account and the supported Sites workflow; the manifest is not a login credential.
+
+For another static host, publish the contents of `dist/` at the root. Connecting `goegsa.com`, configuring host-specific security headers and opening search indexing are separate launch steps. No deployment to Cloudflare Pages has been configured or claimed.
+
+## Trial contact
+
+Trial drafts go to `goegsa.business@gmail.com` or the WhatsApp number in `config/site.json`. The visitor reviews and sends the draft using their own email or WhatsApp app. Marketing consent is optional and included in the draft. Other contact/quote forms retain their existing department routing.
+
+The download link becomes visible after the form action opens the draft link. Mailbox delivery and actual message submission are outside the site's control. The installer remains hosted on a public GitHub release.
+
+## Images and review
+
+The former oversized identity and system-map PNG files have been replaced with local WebP files (155,128 and 169,750 bytes) with the same dimensions. The site no longer fetches the system map from a temporary external hostname. Images are included in this repository. No PNG originals or credentials are required for building.
+
+See [Claude's original review](docs/claude-review-2026-10-27.md), preserved unchanged, and [the assessment against the current site](docs/claude-review-response-2026-10-27.md). The original review covers commit `778b502`, before later published fixes and the new trial form.
