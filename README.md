@@ -58,3 +58,4 @@ Carousel photos have 480/800/1536-pixel candidates selected by srcset/sizes. Ori
 ## Launch staging
 
 Run `node scripts/prepare-launch.mjs` and `node scripts/verify-launch.mjs` to regenerate/check `docs/launch-ready`. This folder is outside deployed dist. Its sitemap, robots allow rule, canonical/hreflang metadata and social cards are staged for the owner-approved final domain. Follow its README at launch; do not treat staging as approval to enable indexing.
+See `docs/claude-review-2026-11-08.md` for the second review (2026-11-08, v60) with a numbered Codex task list; owner-decision items must wait for approval.
