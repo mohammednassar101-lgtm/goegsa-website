@@ -1,0 +1,56 @@
+[
+  {
+    "font": "IBMPlexSans-Bold.woff2",
+    "beforeBytes": 96012,
+    "afterBytes": 69492,
+    "unicodeCharacters": 891,
+    "glyphs": 971,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "d74843738b7f52d65dcf6338f097bfd2b2152518ecdd37d6e0767617bf585547"
+  },
+  {
+    "font": "IBMPlexSans-Regular.woff2",
+    "beforeBytes": 97696,
+    "afterBytes": 69980,
+    "unicodeCharacters": 891,
+    "glyphs": 971,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "a15a43b4e5d32e3fb2797699f077b4e54c481f78ca524558fad6b0f8491418e8"
+  },
+  {
+    "font": "IBMPlexSans-SemiBold.woff2",
+    "beforeBytes": 108024,
+    "afterBytes": 76912,
+    "unicodeCharacters": 891,
+    "glyphs": 971,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "c6ba94797c0ba521e7071a9274bc7553916e2c4a26e957b2ae562d6f95c75f2f"
+  },
+  {
+    "font": "IBMPlexSansArabic-Bold.woff2",
+    "beforeBytes": 97580,
+    "afterBytes": 69604,
+    "unicodeCharacters": 1032,
+    "glyphs": 1664,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "492e1a0f98c108d3f01c7359fdd72bb5fae6a74991224fc254ee8c72703dd156"
+  },
+  {
+    "font": "IBMPlexSansArabic-Regular.woff2",
+    "beforeBytes": 95476,
+    "afterBytes": 67804,
+    "unicodeCharacters": 1032,
+    "glyphs": 1669,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "5847b0e95d98cedcf7ad5bbaa0a2f10aa0937da2df3141b43ff7d4ffeb8d5174"
+  },
+  {
+    "font": "IBMPlexSansArabic-SemiBold.woff2",
+    "beforeBytes": 100524,
+    "afterBytes": 72264,
+    "unicodeCharacters": 1032,
+    "glyphs": 1664,
+    "cmapWidthsOutlinesLayoutVerified": true,
+    "sha256": "44fdedb3502e08a1bf8eec1f24527dbc9f7fc850f28a850e86f7346018aea141"
+  }
+]

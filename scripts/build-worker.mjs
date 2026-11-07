@@ -6,7 +6,7 @@ const root = path.resolve('dist');
 const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.txt':'text/plain; charset=utf-8','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.ico':'image/x-icon','.woff':'font/woff','.woff2':'font/woff2','.xml':'application/xml; charset=utf-8'};
 const entries = {};
 function walk(dir) {
-  for (const item of fs.readdirSync(dir, {withFileTypes:true}).sort((a,b)=>a.name.localeCompare(b.name))) {
+  for (const item of fs.readdirSync(dir, {withFileTypes:true}).sort((a,b)=>a.name < b.name ? -1 : a.name > b.name ? 1 : 0)) {
     if (['server','.openai'].includes(item.name)) continue;
     const file = path.join(dir,item.name);
     if(item.isDirectory()) walk(file);
@@ -18,7 +18,9 @@ function walk(dir) {
 }
 walk(root);
 const handler = fs.readFileSync('worker/handler.mjs','utf8');
-const output = handler + '\nexport default createHandler('+JSON.stringify(entries)+');\n';
+const policy = JSON.parse(fs.readFileSync('worker/cache-policy.json','utf8'));
+const cacheRevision = fs.readFileSync(path.join(root,'index.html'),'utf8').match(/theme\.js\?v=([a-f0-9]{12})/)?.[1] || '';
+const output = handler + '\nexport default createHandler('+JSON.stringify(entries)+','+JSON.stringify({publicCaching:policy.publicCachingEnabled===true,cacheRevision})+');\n';
 if(gzipSync(output).length > 3*1024*1024) throw new Error('Worker exceeds conservative compressed size budget');
 fs.mkdirSync(path.join(root,'server'),{recursive:true});
 fs.writeFileSync(path.join(root,'server/index.js'),output);

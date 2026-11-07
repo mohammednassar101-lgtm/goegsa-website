@@ -53,9 +53,15 @@ The current Sites host did not enforce `_headers` when checked after version 34.
 
 ## Responsive assets
 
-Carousel photos have 480/800/1536-pixel candidates selected by srcset/sizes. Original photos and the full-resolution text-heavy system map remain available. Tajawal WOFF2 files preserve the full original character and shaping tables; original TTF files and OFL are retained for source maintenance. Update the regular-font preload together with the CSS URL when changing fonts.
+Carousel photos have 480/800/1536-pixel candidates selected by srcset/sizes. Original photos and the full-resolution text-heavy system map remain available. IBM Plex Sans Arabic and IBM Plex Sans WOFF2 files preserve all original characters, glyph outlines, metrics and shaping tables; their OFL notices are retained. Unused Tajawal and old WOFF files have been removed. Update the regular-font preload together with the CSS URL when changing fonts.
 
 ## Launch staging
 
 Run `node scripts/prepare-launch.mjs` and `node scripts/verify-launch.mjs` to regenerate/check `docs/launch-ready`. This folder is outside deployed dist. Its sitemap, robots allow rule, canonical/hreflang metadata and social cards are staged for the owner-approved final domain. Follow its README at launch; do not treat staging as approval to enable indexing.
 See `docs/claude-review-2026-11-08.md` for the second review (2026-11-08, v60) with a numbered Codex task list; owner-decision items must wait for approval.
+
+## Worker deployment and reproducible builds
+
+Run `node scripts/build.mjs` before packaging. It regenerates the 16 pages, 404 and ignored `dist/server/index.js`; this module belongs in the deployment archive, not Git. After committing intended changes, run `node scripts/verify-build-stability.mjs` to assert that rebuilding leaves every tracked file unchanged. `.gitattributes` normalizes text to LF.
+
+Public caching is prepared but disabled in `worker/cache-policy.json`; keep it disabled until the owner explicitly approves public launch. See `docs/hosting-response-headers.md` and `docs/claude-review-response-2026-11-08.md`.
