@@ -1,0 +1,232 @@
+{
+  "desktop": [
+    {
+      "failures": [],
+      "url": "/"
+    },
+    {
+      "failures": [],
+      "url": "/products/"
+    },
+    {
+      "failures": [],
+      "url": "/products/school-management/"
+    },
+    {
+      "failures": [],
+      "url": "/services/"
+    },
+    {
+      "failures": [],
+      "url": "/about/"
+    },
+    {
+      "failures": [],
+      "url": "/contact/"
+    },
+    {
+      "failures": [],
+      "url": "/privacy/"
+    },
+    {
+      "failures": [],
+      "url": "/terms/"
+    },
+    {
+      "failures": [],
+      "url": "/en/"
+    },
+    {
+      "failures": [],
+      "url": "/en/products/"
+    },
+    {
+      "failures": [],
+      "url": "/en/products/school-management/"
+    },
+    {
+      "failures": [],
+      "url": "/en/services/"
+    },
+    {
+      "failures": [],
+      "url": "/en/about/"
+    },
+    {
+      "failures": [],
+      "url": "/en/contact/"
+    },
+    {
+      "failures": [],
+      "url": "/en/privacy/"
+    },
+    {
+      "failures": [],
+      "url": "/en/terms/"
+    }
+  ],
+  "mobile": [
+    {
+      "failures": [],
+      "url": "/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/products/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/products/school-management/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/services/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/about/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/contact/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/privacy/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/terms/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/products/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/products/school-management/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/services/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/about/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/contact/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/privacy/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    },
+    {
+      "failures": [],
+      "url": "/en/terms/",
+      "overflow": {
+        "content": 375,
+        "width": 375
+      }
+    }
+  ],
+  "tablet": [
+    {
+      "failures": [],
+      "url": "/"
+    },
+    {
+      "failures": [],
+      "url": "/products/"
+    },
+    {
+      "failures": [],
+      "url": "/products/school-management/"
+    },
+    {
+      "failures": [],
+      "url": "/services/"
+    },
+    {
+      "failures": [],
+      "url": "/about/"
+    },
+    {
+      "failures": [],
+      "url": "/contact/"
+    },
+    {
+      "failures": [],
+      "url": "/privacy/"
+    },
+    {
+      "failures": [],
+      "url": "/terms/"
+    }
+  ]
+}

@@ -41,7 +41,36 @@
         "mode": "custom-quote"
       },
       "media": {
-        "screenshots": [],
+        "screenshots": [
+          {
+            "src": "/assets/dashboard-overview.webp",
+            "caption": {
+              "ar": "نظرة عامة على لوحة التحكم",
+              "en": "Dashboard overview"
+            }
+          },
+          {
+            "src": "/assets/dashboard-charts.webp",
+            "caption": {
+              "ar": "الرسوم البيانية وحالة السداد",
+              "en": "Charts and payment status"
+            }
+          },
+          {
+            "src": "/assets/dashboard-shortcuts.webp",
+            "caption": {
+              "ar": "الوصول السريع للعمليات",
+              "en": "Quick access to daily tasks"
+            }
+          },
+          {
+            "src": "/assets/dashboard-dark.webp",
+            "caption": {
+              "ar": "لوحة التحكم بالوضع الداكن",
+              "en": "Dashboard in dark mode"
+            }
+          }
+        ],
         "video": null
       },
       "modules": [
@@ -97,11 +126,11 @@
       "trial": {
         "days": 14,
         "requestRequired": false,
-        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/download/v1.3.19/SchoolSystemSetup.exe",
-        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/tag/v1.3.19",
-        "version": "v1.3.19",
-        "sha256": "64532ec79ff0b2f0642b25ddcbf9b93e6815e13eed01093f7daab3094729c173",
-        "verifiedAt": "2026-10-27",
+        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/download/v1.3.24/SchoolSystemSetup.exe",
+        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/tag/v1.3.24",
+        "version": "v1.3.24",
+        "sha256": "e0364a23b3832bc651b01c97298330c9f978204d7304983246f36dce05395bc9",
+        "verifiedAt": "2026-11-04",
         "authenticodeStatus": "NotSigned"
       },
       "version": "1.3.18",

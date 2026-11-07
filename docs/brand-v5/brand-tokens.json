@@ -1,0 +1,102 @@
+{
+  "name": "GOEGSA",
+  "status": "CANDIDATE_NOT_APPROVED",
+  "scope": "Developer identity only, no customer-facing UI theme changes",
+  "colors": {
+    "green": "#168447",
+    "greenDark": "#4ADE80",
+    "light": "#F4F7F5",
+    "dark": "#121A15",
+    "ink": "#202A24",
+    "white": "#FFFFFF",
+    "mutedLight": "#526258",
+    "mutedDark": "#C3D5C8"
+  },
+  "logoGradientStops": {
+    "main": [
+      "#79F947",
+      "#1DDC69",
+      "#02AA85",
+      "#045A53"
+    ],
+    "deep": [
+      "#11D2BA",
+      "#006B67",
+      "#052E35"
+    ],
+    "sweep": [
+      "#00A9AB",
+      "#28E9A6",
+      "#8DFB3C"
+    ]
+  },
+  "textContrastPairs": [
+    {
+      "usage": "light wordmark",
+      "foreground": "#202A24",
+      "background": "#F4F7F5",
+      "ratio": 13.73,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "usage": "light subtitle",
+      "foreground": "#526258",
+      "background": "#F4F7F5",
+      "ratio": 6.0,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "usage": "dark wordmark",
+      "foreground": "#FFFFFF",
+      "background": "#121A15",
+      "ratio": 17.73,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "usage": "dark subtitle",
+      "foreground": "#C3D5C8",
+      "background": "#121A15",
+      "ratio": 11.54,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "usage": "light solid green symbol only",
+      "foreground": "#168447",
+      "background": "#F4F7F5",
+      "ratio": 4.4,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "usage": "dark solid green",
+      "foreground": "#4ADE80",
+      "background": "#121A15",
+      "ratio": 10.18,
+      "minimum": 4.5,
+      "pass": true
+    },
+    {
+      "usage": "light green icon on white",
+      "foreground": "#168447",
+      "background": "#FFFFFF",
+      "ratio": 4.75,
+      "minimum": 3,
+      "pass": true
+    },
+    {
+      "usage": "dark green icon",
+      "foreground": "#4ADE80",
+      "background": "#121A15",
+      "ratio": 10.18,
+      "minimum": 3,
+      "pass": true
+    }
+  ],
+  "minLogoHeightWithTaglinePx": 64,
+  "microMarkMaximumPx": 32,
+  "fullMarkMinimumPx": 48
+}

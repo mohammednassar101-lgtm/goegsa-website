@@ -8,7 +8,7 @@
 
 ### 1) Download
 
-Download SchoolSystemSetup.exe using the download button. To check that it matches the published file, compare its SHA-256 hash with the hash in the Download verification section for the same release. Open PowerShell and run:
+Download SchoolSystemSetup.exe using the download button. To check that it matches the published file, compare its SHA-256 hash with the hash for the installer on its GitHub release page. Open PowerShell and run:
 
 
 ```
@@ -17,7 +17,7 @@ Download SchoolSystemSetup.exe using the download button. To check that it match
 
 ### 2) Windows launch notice
 
-Windows may display a notice because the current installer is not signed with an Authenticode certificate. Check the download source, release version and published SHA-256 hash before deciding to run it. A matching hash confirms file consistency; it does not replace a security scan or your school's security policies. Contact support before continuing if you are unsure.
+Windows may display a notice if the installer is not signed with an Authenticode certificate. Check the download source, release version and SHA-256 hash on GitHub before deciding to run it. A matching hash confirms file consistency; it does not replace a security scan or your school's security policies. Contact support before continuing if you are unsure.
 
 ### 3) Installation options
 
