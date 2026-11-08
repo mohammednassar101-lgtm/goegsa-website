@@ -11,8 +11,9 @@ for(const file of paths){
  const res=await worker.fetch(new Request('https://goegsa.com'+pathname+'?v=test'));
  assert.equal(res.status,200,pathname);
  assert.deepEqual(Buffer.from(await res.arrayBuffer()),fs.readFileSync(file),pathname);
- for(const h of ['content-security-policy','strict-transport-security','permissions-policy','referrer-policy','x-content-type-options','x-robots-tag'])assert.ok(res.headers.get(h),h);
- assert.equal(res.headers.get('cache-control'),'private, no-store');
+ for(const h of ['content-security-policy','strict-transport-security','permissions-policy','referrer-policy','x-content-type-options'])assert.ok(res.headers.get(h),h);
+ assert.equal(res.headers.get('x-robots-tag'),null);
+ assert.equal(res.headers.get('cache-control'),file.endsWith('.html')?'no-cache':'public, max-age=3600, must-revalidate');
  const head=await worker.fetch(new Request('https://goegsa.com'+pathname,{method:'HEAD'}));assert.equal((await head.arrayBuffer()).byteLength,0);
 }
 for(const prefix of ['','en/'])for(const route of ['','products/','products/school-management/','services/','about/','contact/','privacy/','terms/']){
@@ -20,6 +21,11 @@ for(const prefix of ['','en/'])for(const route of ['','products/','products/scho
 }
 assert.equal((await worker.fetch(new Request('https://goegsa.com/services?q=1'))).headers.get('location'),'/services/?q=1');
 assert.equal((await worker.fetch(new Request('https://goegsa.com/absent'))).status,404);
+assert.equal((await worker.fetch(new Request('https://goegsa.com/absent'))).headers.get('x-robots-tag'),'noindex, nofollow');
+for(const p of ['/__proto__','/constructor','/server/index.js','/.openai/hosting.json'])assert.equal((await worker.fetch(new Request('https://goegsa.com'+p))).status,404,p);
+assert.equal((await worker.fetch(new Request('https://www.goegsa.com/en/?x=1'))).headers.get('location'),'https://goegsa.com/en/?x=1');
+const revision=fs.readFileSync('dist/index.html','utf8').match(/theme\.js\?v=([a-f0-9]{12})/)[1];
+assert.equal((await worker.fetch(new Request('https://goegsa.com/theme.js?v='+revision))).headers.get('cache-control'),'public, max-age=31536000, immutable');
 assert.equal((await worker.fetch(new Request('https://goegsa.com/%E0%A4%A'))).status,400);
 assert.equal((await worker.fetch(new Request('https://goegsa.com/',{method:'POST'}))).status,405);
 console.log(`Worker verified: ${paths.length} files byte-identical, 16 routes, HEAD, redirect, 404, 400, 405 and security headers.`);

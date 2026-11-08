@@ -1,9 +1,5 @@
-# Launch preparation — staged only
+# Launch metadata
 
-These files are outside dist and are not active on the review site. Do not copy robots.txt or sitemap.xml to production until the owner approves public launch and goegsa.com is connected and verified.
+Owner approved public launch on 8 November 2026. The build uses launch-metadata.mjs as the source for canonical URLs, reciprocal hreflang, Open Graph images, Organization JSON-LD, robots.txt and sitemap.xml. Social images are copied into dist when publication.indexing is enabled.
 
-At approved launch: confirm the final HTTPS origin and redirect policy; regenerate this package; copy social-ar.png and social-en.png to /assets/; wire canonical, absolute reciprocal hreflang, Open Graph image/URL and Organization JSON-LD from metadata.json into the page builder; copy sitemap/robots; switch robots meta and remove the preview bar; verify public access, HTTPS, headers and all 16 URLs; submit the sitemap only after these checks. Do not add prices, ratings or registration identifiers without owner approval.
-
-This package contains no analytics or tracking scripts. Organization details describe the operator, not a claim of legal certification.
-
-Source: https://developers.google.com/search/docs/specialty/international/localized-versions
+Changing indexing does not change Sites access by itself. Public caching has its own explicit configuration. Confirm anonymous access and public responses after publishing. No analytics, invented ratings, prices or registration identifiers are added. Search Console submission requires the owner account; sitemap availability is not a claim of submission or indexing.

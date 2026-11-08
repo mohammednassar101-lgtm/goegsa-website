@@ -1,3 +1,13 @@
+# إعدادات الإطلاق العام — اعتماد 8 نوفمبر 2026
+
+اعتمد المالك صراحة الإطلاق العام. تُفعل publication.indexing وpublicLaunchApproved وpublicCachingEnabled في هذه الدفعة. لا تغيير في ترويسات الحماية الخمس. صفحات HTML الناجحة no-cache، والموارد ذات بصمة v المعتمدة immutable لعام، والموارد غير المرقمة ساعة مع إعادة تحقق. أخطاء الخادم تبقى no-store وnoindex. لا يُرسل منع فهرسة مع الصفحات العامة الناجحة، وتبقى صفحة 404 noindex.
+
+يحوّل www.goegsa.com إلى https://goegsa.com بتحويل 308 يحفظ المسار والاستعلام. جذر goegsa.com هو المرجع في canonical وخريطة الموقع وروابط اللغات. لا تغيير في DNS، ولا تشغيل تحليلات أو تتبع.
+
+ملف dist/server/index.js غير متعقب في Git، ويتولد عبر node scripts/build.mjs ويضاف إلى أرشيف النشر. تحقق البناء المستقر واختبارات الخادم والإطلاق والتخزين قبل أي نشر.
+
+## السجل السابق للإطلاق
+
 # Response headers on Sites
 
 The existing Site uses the supported Worker ESM deployment format. The same project, owner-only access policy, DNS-only root records, page markup and assets are retained. The outer Sites sign-in gate continues to enforce access; the handler does not supply authentication or proxy any other host.

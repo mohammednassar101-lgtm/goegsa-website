@@ -1,3 +1,7 @@
+# Public launch approved — 8 November 2026
+
+Owner approval now enables public indexing and caching. The build publishes 16 canonical bilingual pages, reciprocal hreflang, Open Graph images, Organization JSON-LD, robots.txt and sitemap.xml. www redirects to the primary HTTPS domain. The Sites audience is managed separately through hosting tools. See docs/work-plan-current.md for post-launch tasks.
+
 # GOEGSA website
 
 Arabic and English static marketing site. The deployed version includes the simplified trial request form: visitors enter their details, open an email or WhatsApp draft, then receive a download link. No customer database, automatic email delivery or tracking is included.

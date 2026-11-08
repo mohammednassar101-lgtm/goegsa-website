@@ -8,7 +8,7 @@ const security = {
   'X-Robots-Tag': 'noindex, nofollow',
   'Cache-Control': 'private, no-store'
 };
-export function createHandler(files, {publicCaching = false, cacheRevision = ''} = {}) {
+export function createHandler(files, {publicCaching = false, publicIndexing = false, canonicalOrigin = null, cacheRevision = ''} = {}) {
   return { async fetch(request) {
     const url = new URL(request.url);
     const headers = new Headers(security);
@@ -16,20 +16,28 @@ export function createHandler(files, {publicCaching = false, cacheRevision = ''}
       headers.set('Allow', 'GET, HEAD');
       return new Response(null, {status: 405, headers});
     }
+    if (publicIndexing && canonicalOrigin && url.hostname === 'www.'+new URL(canonicalOrigin).hostname) {
+      headers.delete('X-Robots-Tag');
+      headers.set('Location', canonicalOrigin+url.pathname+url.search);
+      return new Response(null, {status:308,headers});
+    }
     let pathname;
     try { pathname = decodeURIComponent(url.pathname); }
     catch { return new Response(null, {status: 400, headers}); }
     // Only serve exact packaged paths; never fetch another host or read a filesystem.
-    let entry = files[pathname];
-    if (!entry && files[pathname + '/index.html']) {
+    const lookup = key => Object.hasOwn(files,key) ? files[key] : undefined;
+    let entry = lookup(pathname);
+    if (!entry && lookup(pathname + '/index.html')) {
+      if(publicIndexing) headers.delete('X-Robots-Tag');
       headers.set('Location', url.pathname + '/' + url.search);
       return new Response(null, {status: 308, headers});
     }
-    if (!entry && pathname.endsWith('/')) entry = files[pathname + 'index.html'];
+    if (!entry && pathname.endsWith('/')) entry = lookup(pathname + 'index.html');
     const status = entry ? 200 : 404;
     entry ||= files['/404.html'];
     headers.set('Content-Type', entry.type);
-    // Staged only: the build keeps publicCaching false until the owner's public launch decision.
+    if(publicIndexing && status===200) headers.delete('X-Robots-Tag');
+    // Activated only by the owner-approved public launch configuration.
     if (publicCaching && status === 200) {
       const versioned = /^[a-f0-9]{12}$/.test(cacheRevision) && url.searchParams.get('v') === cacheRevision;
       if (entry.type.startsWith('text/html')) headers.set('Cache-Control', 'no-cache');

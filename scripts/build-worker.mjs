@@ -19,8 +19,10 @@ function walk(dir) {
 walk(root);
 const handler = fs.readFileSync('worker/handler.mjs','utf8');
 const policy = JSON.parse(fs.readFileSync('worker/cache-policy.json','utf8'));
+const config = JSON.parse(fs.readFileSync('config/site.json','utf8'));
+if(policy.publicCachingEnabled && !config.publication.publicLaunchApproved) throw Error('Public caching requires approved public launch');
 const cacheRevision = fs.readFileSync(path.join(root,'index.html'),'utf8').match(/theme\.js\?v=([a-f0-9]{12})/)?.[1] || '';
-const output = handler + '\nexport default createHandler('+JSON.stringify(entries)+','+JSON.stringify({publicCaching:policy.publicCachingEnabled===true,cacheRevision})+');\n';
+const output = handler + '\nexport default createHandler('+JSON.stringify(entries)+','+JSON.stringify({publicCaching:policy.publicCachingEnabled===true,publicIndexing:config.publication.indexing===true,canonicalOrigin:'https://'+config.company.domain,cacheRevision})+');\n';
 if(gzipSync(output).length > 3*1024*1024) throw new Error('Worker exceeds conservative compressed size budget');
 fs.mkdirSync(path.join(root,'server'),{recursive:true});
 fs.writeFileSync(path.join(root,'server/index.js'),output);
