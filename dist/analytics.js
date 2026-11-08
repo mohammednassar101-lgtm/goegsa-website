@@ -29,7 +29,7 @@
  }
  function track(name,params={}){if(choice!=='accepted'||!loaded)return;gtag('event',name,{...page,...params,send_to:id});}
  const notice=document.createElement('section');notice.className='analytics-notice';notice.setAttribute('aria-label',t('إعدادات الإحصاءات','Analytics preferences'));
- notice.innerHTML='<p>'+t('هل تسمح بإحصاءات الزيارات؟ نستخدم Google Analytics لفهم استخدام الموقع ونقرات التنزيل. اختيارك لا يؤثر في الخدمات.','Allow visit statistics? We use Google Analytics to understand site usage and download clicks. Your choice does not affect our services.')+'</p><div><button type="button" data-analytics-accept>'+t('قبول الإحصاءات','Accept analytics')+'</button><button type="button" data-analytics-reject>'+t('رفض الإحصاءات','Reject analytics')+'</button><a href="'+(en?'/en/':'/')+'privacy/">'+t('سياسة الخصوصية','Privacy policy')+'</a><button type="button" data-analytics-close hidden>'+t('إغلاق','Close')+'</button></div><small role="status"></small>';
+ notice.innerHTML='<p>'+t('إحصاءات Google؟','Google analytics?')+'</p><div><button type="button" data-analytics-accept>'+t('قبول','Accept')+'</button><button type="button" data-analytics-reject>'+t('رفض','Reject')+'</button><a href="'+(en?'/en/':'/')+'privacy/">'+t('الخصوصية','Privacy')+'</a><button type="button" data-analytics-close hidden>'+t('إغلاق','Close')+'</button></div><small role="status"></small>';
  notice.hidden=choice!==null;document.body.append(notice);
  const preferences=document.createElement('button');preferences.type='button';preferences.className='analytics-preferences';preferences.textContent=t('إعدادات الإحصاءات','Analytics preferences');
  (document.querySelector('footer')||document.body).append(preferences);
