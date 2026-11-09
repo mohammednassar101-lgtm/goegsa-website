@@ -15,7 +15,7 @@ h=harness();h.accept();assert.equal(h.scripts.length,1);h.accept();assert.equal(
 assert.ok(h.queue().every(x=>!JSON.stringify(x).includes('secret@example.com')));
 const trial={matches:s=>s==='[data-simple-trial]'};
 h.events.click({target:{closest:()=>trial}});assert.equal(h.queue().at(-1)[1],'trial_form_open');
-const download={matches:()=>false,hidden:false,href:'https://github.com/mohammednassar101-lgtm/school-system-updates/releases/download/v1.3.30/SchoolSystemSetup.exe'};
+const download={matches:()=>false,hidden:false,href:'https://github.com/mohammednassar101-lgtm/school-system-updates/releases/latest/download/SchoolSystemSetup.exe'};
 h.events.click({target:{closest:()=>download}});assert.equal(h.queue().at(-1)[1],'file_download');
 let n=h.queue().length;download.href+='?phone=secret';h.events.click({target:{closest:()=>download}});assert.equal(h.queue().length,n);
 const form={matches:()=>true,checkValidity:()=>false,querySelector:()=>({value:'email'})};h.events.submit({target:form});assert.equal(h.queue().length,n);form.checkValidity=()=>true;h.events.submit({target:form});assert.equal(h.queue().at(-1)[1],'trial_request_open');assert.equal(h.queue().at(-1)[2].channel,'email');

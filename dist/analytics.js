@@ -45,7 +45,7 @@
  document.addEventListener('click',event=>{
   const target=event.target.closest('[data-simple-trial],.trial-download');if(!target)return;
   if(target.matches('[data-simple-trial]'))track('trial_form_open',{product:'school_management'});
-  else if(!target.hidden){try{const url=new URL(target.href);if(url.origin==='https://github.com'&&/^\/mohammednassar101-lgtm\/school-system-updates\/releases\/download\/v\d+\.\d+\.\d+\/SchoolSystemSetup\.exe$/.test(url.pathname)&&!url.search&&!url.hash)track('file_download',{file_name:'SchoolSystemSetup.exe',file_extension:'exe',product:'school_management'});}catch{}}
+  else if(!target.hidden){try{const url=new URL(target.href);if(url.origin==='https://github.com'&&/^\/mohammednassar101-lgtm\/school-system-updates\/releases\/(?:download\/v\d+\.\d+\.\d+|latest\/download)\/SchoolSystemSetup\.exe$/.test(url.pathname)&&!url.search&&!url.hash)track('file_download',{file_name:'SchoolSystemSetup.exe',file_extension:'exe',product:'school_management'});}catch{}}
  });
  document.addEventListener('submit',event=>{const form=event.target;if(!form.matches('.lead-form')||!form.checkValidity())return;const channel=form.querySelector('input[name="channel"]:checked')?.value;if(['email','whatsapp'].includes(channel))track('trial_request_open',{channel,product:'school_management'});});
  window.addEventListener('storage',event=>{if(event.key===key)location.reload();});

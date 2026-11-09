@@ -128,11 +128,11 @@
       "trial": {
         "days": 14,
         "requestRequired": false,
-        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/download/v1.3.30/SchoolSystemSetup.exe",
-        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/tag/v1.3.30",
-        "version": "v1.3.30",
-        "sha256": "43bc4b46a2734e1ddcf338ea812a97cbd43ff4b613021f641a28f690d985cca9",
-        "verifiedAt": "2026-11-08",
+        "downloadUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/latest/download/SchoolSystemSetup.exe",
+        "releaseNotesUrl": "https://github.com/mohammednassar101-lgtm/school-system-updates/releases/tag/v1.3.33",
+        "version": "v1.3.33",
+        "sha256": "def02160f431334be3df5d43efd22fdd3aab7988796861d0e179f1404e09ad6b",
+        "verifiedAt": "2026-11-09",
         "authenticodeStatus": "NotSigned"
       },
       "version": "1.3.18",

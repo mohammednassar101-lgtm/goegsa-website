@@ -23,9 +23,8 @@
     const sha256 = installer.digest.slice(7).toLowerCase();
     for (const link of document.querySelectorAll('a[href]')) {
       if (link.href === trial.releaseNotesUrl) link.href = releaseNotesUrl;
-      if (link.href === trial.downloadUrl) link.href = url;
     }
-    Object.assign(trial, { version: tag, downloadUrl: url, releaseNotesUrl, sha256 });
+    Object.assign(trial, { version: tag, releaseNotesUrl, sha256 });
     panel.querySelector('strong').textContent = tag;
   } catch {
     // Keep the verified release already included in the page.
