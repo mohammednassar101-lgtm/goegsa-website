@@ -32,12 +32,16 @@
  notice.innerHTML='<p>'+t('إحصاءات Google؟','Google analytics?')+'</p><div><button type="button" data-analytics-accept>'+t('قبول','Accept')+'</button><button type="button" data-analytics-reject>'+t('رفض','Reject')+'</button><a href="'+(en?'/en/':'/')+'privacy/">'+t('الخصوصية','Privacy')+'</a><button type="button" data-analytics-close hidden>'+t('إغلاق','Close')+'</button></div><small role="status"></small>';
  notice.hidden=choice!==null;document.body.append(notice);
  const preferences=document.createElement('button');preferences.type='button';preferences.className='analytics-preferences';preferences.textContent=t('إعدادات الإحصاءات','Analytics preferences');
- (document.querySelector('footer')||document.body).append(preferences);
- preferences.addEventListener('click',()=>{notice.hidden=false;notice.querySelector('[data-analytics-close]').hidden=false;notice.querySelector('[data-analytics-accept]').focus();});
- function choose(value){choice=value;try{localStorage.setItem(key,JSON.stringify({choice,time:Date.now()}));}catch{}if(choice==='accepted')start();else stop();notice.hidden=true;preferences.focus();}
+ const privacyPage=/^\/(?:en\/)?privacy\/$/.test(location.pathname);
+ const privacyContent=privacyPage?document.querySelector('#main'):null;
+ (privacyContent||document.querySelector('footer')||document.body).append(preferences);
+ function updatePreferences(){preferences.hidden=!privacyPage&&choice==='accepted';}
+ updatePreferences();
+ preferences.addEventListener('click',()=>{notice.hidden=false;notice.querySelector('[data-analytics-close]').hidden=false;notice.querySelector('[data-analytics-accept]').focus({preventScroll:true});});
+ function choose(value){choice=value;try{localStorage.setItem(key,JSON.stringify({choice,time:Date.now()}));}catch{}if(choice==='accepted')start();else stop();notice.hidden=true;updatePreferences();if(!preferences.hidden)preferences.focus({preventScroll:true});}
  notice.querySelector('[data-analytics-accept]').addEventListener('click',()=>choose('accepted'));
  notice.querySelector('[data-analytics-reject]').addEventListener('click',()=>choose('denied'));
- notice.querySelector('[data-analytics-close]').addEventListener('click',()=>{notice.hidden=true;preferences.focus();});
+ notice.querySelector('[data-analytics-close]').addEventListener('click',()=>{notice.hidden=true;updatePreferences();if(!preferences.hidden)preferences.focus({preventScroll:true});});
  document.addEventListener('click',event=>{
   const target=event.target.closest('[data-simple-trial],.trial-download');if(!target)return;
   if(target.matches('[data-simple-trial]'))track('trial_form_open',{product:'school_management'});
