@@ -46,35 +46,53 @@
       "media": {
         "screenshots": [
           {
-            "src": "/assets/dashboard-overview.webp",
+            "src": "/assets/dashboard-overview-1333.webp",
             "caption": {
-              "ar": "نظرة عامة على لوحة التحكم",
-              "en": "Dashboard overview"
+              "ar": "لوحة التحكم — مؤشرات تجريبية للمدرسة",
+              "en": "Dashboard — sample school indicators"
             }
           },
           {
-            "src": "/assets/dashboard-charts.webp",
+            "src": "/assets/dashboard-charts-1333.webp",
             "caption": {
-              "ar": "الرسوم البيانية وحالة السداد",
-              "en": "Charts and payment status"
+              "ar": "الرسوم البيانية والاختصارات اليومية",
+              "en": "Charts and daily shortcuts"
             }
           },
           {
-            "src": "/assets/dashboard-shortcuts.webp",
-            "caption": {
-              "ar": "الوصول السريع للعمليات",
-              "en": "Quick access to daily tasks"
-            }
-          },
-          {
-            "src": "/assets/dashboard-dark.webp",
+            "src": "/assets/dashboard-dark-1333.webp",
             "caption": {
               "ar": "لوحة التحكم بالوضع الداكن",
               "en": "Dashboard in dark mode"
             }
+          },
+          {
+            "src": "/assets/students-demo-1333.webp",
+            "caption": {
+              "ar": "سجل الطلاب — صورة توضيحية معدّلة ببيانات وهمية",
+              "en": "Student records — edited illustration with fictional data"
+            }
           }
         ],
-        "video": null
+        "video": null,
+        "clips": [
+          {
+            "src": "/assets/dashboard-dark-1333.mp4",
+            "poster": "/assets/dashboard-dark-1333.webp",
+            "caption": {
+              "ar": "جولة لوحة التحكم بالوضع الداكن",
+              "en": "Dashboard tour in dark mode"
+            }
+          },
+          {
+            "src": "/assets/dashboard-light-1333.mp4",
+            "poster": "/assets/dashboard-overview-1333.webp",
+            "caption": {
+              "ar": "جولة لوحة التحكم بالوضع الفاتح",
+              "en": "Dashboard tour in light mode"
+            }
+          }
+        ]
       },
       "modules": [
         [

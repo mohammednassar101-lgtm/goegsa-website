@@ -47,6 +47,26 @@ export function createHandler(files, {publicCaching = false, publicIndexing = fa
     }
     const bytes = Uint8Array.from(atob(entry.data), c => c.charCodeAt(0));
     headers.set('Content-Length', String(bytes.length));
+    if(status===200 && entry.type==='video/mp4') {
+      headers.set('Accept-Ranges','bytes');
+      const range=request.headers.get('Range');
+      if(request.method==='GET' && range) {
+        const match=/^bytes=(\d*)-(\d*)$/.exec(range);
+        let start=0,end=bytes.length-1;
+        if(match && (match[1]||match[2])) {
+          if(match[1]) {start=Number(match[1]);if(match[2])end=Math.min(Number(match[2]),end);}
+          else start=Math.max(0,bytes.length-Number(match[2]));
+        } else start=NaN;
+        if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start>end||start>=bytes.length) {
+          headers.set('Content-Range',`bytes */${bytes.length}`);
+          headers.set('Content-Length','0');
+          return new Response(null,{status:416,headers});
+        }
+        headers.set('Content-Range',`bytes ${start}-${end}/${bytes.length}`);
+        headers.set('Content-Length',String(end-start+1));
+        return new Response(bytes.slice(start,end+1),{status:206,headers});
+      }
+    }
     return new Response(request.method === 'HEAD' ? null : bytes, {status, headers});
   }};
 }

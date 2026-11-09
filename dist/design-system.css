@@ -182,3 +182,5 @@ html[lang] body #app :is(h1,h2,h3,h4,h5,h6),html[lang] body dialog :is(h1,h2,h3,
 html[lang] body #app .btn,html[lang] body dialog .btn{font-weight:600}
 html[lang] .language-switch :is(.lang,.language-current){font-family:inherit}
 html[lang="en"] .hero-slide :is(h1,h2),html[lang="en"] h1{letter-spacing:-.5px}
+
+.program-video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:24px}.program-video-grid figure{margin:0;padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--card,#fff)}.program-video-grid video{display:block;width:100%;aspect-ratio:1280/706;object-fit:contain;border-radius:6px;background:#0f192b}.program-video-grid figcaption{padding:12px;font-weight:600;color:var(--text,inherit)}[data-theme="dark"] .program-video-grid figure{background:#1b2c42;border-color:#38516c}[data-theme="dark"] .program-video-grid figcaption{color:#e8f1ff}@media(max-width:680px){.program-video-grid{grid-template-columns:1fr}}
